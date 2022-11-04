@@ -11,7 +11,7 @@ export const FavoritesPage = () => {
                 favorites.length > 0 ?
                 <MovieCardsContainer isFavoritesPage={true} movies={favorites} /> :
                 <Box className={style.nothingFound}>
-                    <img src="/norecord.png" alt="Not found" />
+                    <img src="/Movie-Project/norecord.png" alt="Not found" />
                     <h4>Nothing found</h4>
                 </Box>
             }
