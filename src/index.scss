@@ -1,0 +1,24 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  background: #d1e3ee !important;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #cfcfcf #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff49;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+}

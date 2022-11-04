@@ -1,0 +1,37 @@
+.cardMedia {
+    height: 200px;
+}
+
+.cardContent {
+    height: 100%;
+
+    .cardTitle {
+        font-size: 16px;
+    }
+
+    .cardDate {
+        font-size: 14px;
+        color: #8d8d8d;
+    }
+}
+
+.cardActions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.customCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px !important;
+}
+
+.favoriteIcon, .deleteIcon {
+    color: #8d8d8d;
+}
+.favoriteIconSelected {
+    color: #ff8484;
+}

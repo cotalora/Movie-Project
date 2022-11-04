@@ -1,0 +1,15 @@
+.linkMenu{
+    text-decoration: none;
+    width: 100%;
+    color: #000000;
+}
+
+.linkMenuSelected {
+    @extend .linkMenu;
+    background: #1976d2;
+    color: #FFFFFF;
+
+    .iconList {
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,57 @@
+.movieContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+
+    .movieDialog {
+        background: #FFFFFF;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 10px 9px 10px -3px rgba(0,0,0,0.1);
+
+        .dialogHeader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .movieTitle {
+                font-size: 24px;
+                font-weight: 800;
+                text-align: center;
+            }
+
+            .movieDate {
+                font-size: 14px;
+                color: #757575;
+            }
+        }
+
+        .dialogContent {
+            max-width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+        }
+
+        .dialogFooter {
+            max-height: 100px;
+            overflow-y: auto;
+        }
+
+    }
+}
