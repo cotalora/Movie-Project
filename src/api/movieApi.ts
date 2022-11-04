@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const movieApi = axios.create({
-    baseURL: import.meta.env.VITE_API_URL,
+    baseURL: process.env.VITE_API_URL,
 });
 
 export const getMovies = async (title: string, max_results: number, genre: string) => {

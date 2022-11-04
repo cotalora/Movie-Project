@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 export const MovieCard = ({ id, url, title, date, isFavorite, selectAsFavorite, deleteMovie, isFavoritesPage }: MovieCardProps) => {
     return (
         <Fade in={true}>
-            <Card className={style.customCard}>
+            <Card aria-label='movie-card' className={style.customCard}>
                 <CardActionArea disableRipple>
                     <Link to={`/movie?movie=${id}`}>
                         <CardMedia
@@ -36,7 +36,7 @@ export const MovieCard = ({ id, url, title, date, isFavorite, selectAsFavorite, 
                 {
                     !isFavoritesPage &&
                     <CardActions className={style.cardActions} disableSpacing>
-                        <IconButton onClick={() => {
+                        <IconButton aria-label='button-favorite' onClick={() => {
                             selectAsFavorite && selectAsFavorite({
                                 id: id,
                                 title: title,
@@ -49,7 +49,7 @@ export const MovieCard = ({ id, url, title, date, isFavorite, selectAsFavorite, 
                         }}>
                             <FavoriteIcon className={isFavorite ? style.favoriteIconSelected : style.favoriteIcon} />
                         </IconButton>
-                        <IconButton onClick={() => { deleteMovie && deleteMovie(id) }}>
+                        <IconButton aria-label='button-delete' onClick={() => { deleteMovie && deleteMovie(id) }}>
                             <DeleteIcon className={style.deleteIcon} />
                         </IconButton>
                     </CardActions>

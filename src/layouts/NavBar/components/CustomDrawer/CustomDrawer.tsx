@@ -16,7 +16,7 @@ export const CustomDrawer = ({ routes = [] }: CustomDrawerProps) => {
             <List>
                 {
                     routes.filter(route => route.name).map(({ name, path }) => (
-                        <ListItem key={name} disablePadding>
+                        <ListItem aria-label='router-list' key={name} disablePadding>
                             <Link className={pathname == path ? style.linkMenuSelected : style.linkMenu} to={path}>
                                 <ListItemButton>
                                     <ListItemIcon>
